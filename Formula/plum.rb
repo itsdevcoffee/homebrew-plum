@@ -5,21 +5,21 @@
 class Plum < Formula
   desc "Claude Plugin Manager - Discover and install plugins from 10+ marketplaces"
   homepage "https://github.com/itsdevcoffee/plum"
-  version "0.4.1"
+  version "0.4.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/itsdevcoffee/plum/releases/download/v0.4.1/plum_0.4.1_Darwin_x86_64.tar.gz"
-      sha256 "653581c92bacc3a00c6ecc723ca7d792e7638fae6b0ceed72782c1d832349e68"
+      url "https://github.com/itsdevcoffee/plum/releases/download/v0.4.2/plum_0.4.2_Darwin_x86_64.tar.gz"
+      sha256 "b417e7d26b549cf2026ceb3e161e919ef65c1d72115d1bc5d26a2aa906babf2b"
 
       def install
         bin.install "plum"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/itsdevcoffee/plum/releases/download/v0.4.1/plum_0.4.1_Darwin_arm64.tar.gz"
-      sha256 "a80514aa38f9a5982bddf92b93400064f1232eec6b17bc127740b3a3e495c735"
+      url "https://github.com/itsdevcoffee/plum/releases/download/v0.4.2/plum_0.4.2_Darwin_arm64.tar.gz"
+      sha256 "f75e1740d5016fe4b0da3d8c093f73650fe097b3dc7c73e658ea1987655ec366"
 
       def install
         bin.install "plum"
@@ -29,15 +29,15 @@ class Plum < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/itsdevcoffee/plum/releases/download/v0.4.1/plum_0.4.1_Linux_x86_64.tar.gz"
-      sha256 "cd94bee05ee958ccf8b274fe40fddbbed503dab209ebbb14810e7daa29d3d1aa"
+      url "https://github.com/itsdevcoffee/plum/releases/download/v0.4.2/plum_0.4.2_Linux_x86_64.tar.gz"
+      sha256 "49b1c22185bfc01c08464da4bfa8bc37dde701243ba7ddc807744fa6239324f4"
       def install
         bin.install "plum"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/itsdevcoffee/plum/releases/download/v0.4.1/plum_0.4.1_Linux_arm64.tar.gz"
-      sha256 "e3c2f8a64c0d849f071e8700276913aa8d2e3efc0fddd8bd6b24a22e17bff2c0"
+      url "https://github.com/itsdevcoffee/plum/releases/download/v0.4.2/plum_0.4.2_Linux_arm64.tar.gz"
+      sha256 "bb0632feb5d7b3b81d580136dfec5cd73d7f19bcacb3098fe492a272fecd91a8"
       def install
         bin.install "plum"
       end
